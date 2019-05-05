@@ -188,3 +188,22 @@ color: #ffff;
    padding-bottom: 80px;
    background-color: #efe8dd;
 }
+.title {
+   color: #565656;
+
+font-size: 28px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+.title:before {
+   font-family: 'fontawesome';
+   content: "\f135";
+}
+.work__text {
+   color: #565656;
+
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+
+}
