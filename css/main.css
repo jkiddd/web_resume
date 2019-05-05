@@ -1,0 +1,41 @@
+/* базовые стили по умолчанию */
+
+* {
+   box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin-top: 0;
+   margin-bottom: 0;
+   font-weight: normal;
+}
+
+html,body {
+   height: 100%;
+   width: 100%;
+}
+body {
+  font-size: 14px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+a {
+   text-decoration: none;
+}
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.container {
+   margin: 0 auto;
+   width: 
+}
+
+.wrapper {
+   overflow: hidden;  
+   min-height: 100%;
+}
