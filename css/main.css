@@ -4,35 +4,44 @@
    box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    margin-top: 0;
    margin-bottom: 0;
    font-weight: normal;
 }
 
-html,body {
+html,
+body {
    height: 100%;
    width: 100%;
 }
+
 body {
-  font-size: 14px;
-  line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
-  
+   font-size: 14px;
+   line-height: 1.42;
+   -webkit-font-smoothing: antialiased;
+
 }
 
 a {
    text-decoration: none;
 }
+
 ul {
    margin: 0;
    padding: 0;
    list-style: none;
 }
+
 @font-face {
-   font-family:'fontawesome';
+   font-family: 'fontawesome';
    src: url('fonts/fontawesome-webfont-webfont.woff2') format('woff2'),
-        url('fonts/fontawesome-webfont-webfont.woff') format('woff');
+      url('fonts/fontawesome-webfont-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 
@@ -44,16 +53,17 @@ ul {
 }
 
 .wrapper {
-   overflow: hidden;  
+   overflow: hidden;
    min-height: 100%;
 }
-.clearfix:after {
-       content: "";
-      display: block;
-        clear: both;
-    }
 
-    /* стилизация шапки */
+.clearfix:after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+/* стилизация шапки */
 .header {
    background-color: #5a708e;
 }
@@ -62,40 +72,48 @@ ul {
    float: left;
    width: 60%;
 }
+
 .header__title {
    padding-bottom: 40px;
    padding-top: 40px;
 }
+
 .header__title-link {
    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
-color: #8bc3da;
+   color: #8bc3da;
 
-font-size: 32px;
-font-weight: 700;
+   font-size: 32px;
+   font-weight: 700;
 }
+
 .header__right {
    float: right;
    width: 40%;
 }
+
 .header__menu-text {
    padding-top: 54px;
    padding-bottom: 54px;
 }
+
 .menu__item {
    display: inline-block;
    vertical-align: middle;
    margin-right: 25px;
 }
+
 .menu__text {
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
-color: #ffffff;
-font-size: 16px;
-font-weight: 400;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+   color: #ffffff;
+   font-size: 16px;
+   font-weight: 400;
 
 }
+
 .menu__text:hover {
    color: #82b3cc;
 }
+
 /* Обо мне */
 
 .about {
@@ -103,38 +121,44 @@ font-weight: 400;
    padding-top: 50px;
    padding-bottom: 70px;
 }
+
 .about__desc {
    margin-bottom: 70px;
 }
+
 .about__icons {
    font-size: 28px;
    color: #ffff;
    font-weight: 400;
    cursor: pointer;
-   
+
 }
+
 .about__icons:hover {
    color: #414141;
 }
+
 .about__icons:before {
-   font-family:'fontawesome';
+   font-family: 'fontawesome';
    content: "\f21b";
-   
+
 }
 
 .about__text {
    margin-top: 25px;
    color: #ffffff;
    width: 620px;
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
 }
+
 .about__left {
    width: 40%;
    float: left;
-   
+
 }
+
 .about__avatar {
    border-radius: 50%;
    width: 340px;
@@ -142,6 +166,7 @@ line-height: 30px;
    overflow: hidden;
    border: 5px solid #5a708e;
 }
+
 .about__pic {
    max-width: 100%;
 }
@@ -150,60 +175,166 @@ line-height: 30px;
    width: 60%;
    float: right;
 }
+
 .about__list {
    padding-top: 50px;
    padding-bottom: 50px;
 }
+
 .about__item {
    margin-left: 70px;
    margin-bottom: 20px;
-   position: relative;   
+   position: relative;
    background: url('/img/decor/dot.png') 0 bottom repeat-x;
 }
-.about__block-name, .about__name {
+
+.about__block-name,
+.about__name {
    display: inline-block;
    vertical-align: middle;
-} 
+}
+
 .about__block-name {
    margin-right: 10px;
    font-size: 18px;
    font-weight: 400;
-   
    color: #ffff;
 }
-.about__name {
-  position: absolute;
-  right: 0;
-   font-size: 18px;
-font-weight: 400;
 
-color: #ffff;
+.about__name {
+   position: absolute;
+   right: 0;
+   font-size: 18px;
+   font-weight: 400;
+   color: #ffff;
 }
+
 .about--color {
    color: #5a708e
 }
+
 /* блок опыт работы */
 .work {
    padding-top: 80px;
    padding-bottom: 80px;
    background-color: #efe8dd;
 }
+
 .title {
    color: #565656;
 
-font-size: 28px;
-font-weight: 700;
-margin-bottom: 30px;
+   font-size: 28px;
+   font-weight: 700;
+   margin-bottom: 30px;
 }
+
 .title:before {
    font-family: 'fontawesome';
    content: "\f135";
 }
+
 .work__text {
    color: #565656;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   margin-bottom: 65px;
+}
+.work__block-left {
+   width: 60%;
+   float: left;
+}
+.work__block-right {
+   width: 30%;
+   float: right;
+}
 
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
+.work__block-title {
+   border-bottom: 1px solid #a29f99;
+   margin-top: 12px;
+   
+}
+.work__title {
+   color:#565656;
+}
+.work__title:before {
+   font-family: 'fontawesome';
+   content: "\f0b1";
+}
+.work__unoversity:before {
+   font-family: 'fontawesome';
+   content: "\f19c"; 
+}
 
+.work__name {
+   font-size: 18px;
+line-height: 24px;
+font-weight: 600;
+color: #565656;
+margin-bottom: 15px;
+margin-top: 20px;
+}
+.work__block-text {
+   position: relative;
+}
+
+.work__date,.work__place {
+   color: #565656;
+   font-size: 15px;
+font-weight: 600; 
+}
+.work__place {
+   position: absolute;
+   right: 0;
+}
+.work__text-block {
+   margin-bottom: 30px;
+   margin-top: 30px;
+   font-size: 14px;
+   line-height: 20px;
+   color: #565656;
+}
+.graphics {
+   margin-bottom: 40px;
+}
+.progressbar__title {
+   color: #565656;
+   font-size: 15px;
+   margin-bottom: 10px;
+  
+}
+.progressbar__title:before {
+   font-family: 'fontawesome';
+   content: "\f1fc"; 
+   margin-right: 5px;
+}
+.progressbar__block {
+   width: 100%;
+   background-color: #d7d0c6; 
+   padding: 3px; 
+   margin-bottom: 10px; 
+}
+.progressbar {
+	display: block;
+	height: 22px;
+   background-color: #5a708e;
+   padding-left: 10px;
+   color: #ffff;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+.progressbar--blue {
+   background-color: #73a9bf;
+}
+.progressbar--red {
+   background-color: #a66266;
+}
+.progressbar--html:before {
+   font-family: 'fontawesome';
+   content: "\f13b"; 
+   margin-right: 5px;
+}
+.progressbar--star:before {
+   font-family: 'fontawesome';
+   content: "\f005"; 
+   margin-right: 5px;
 }
