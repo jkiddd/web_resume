@@ -14,10 +14,10 @@
 
 <body>
    <div class="wrapper">
-      <header class="header">
+      <header class="header ">
          <div class="container clearfix">
             <div class="header__left">
-               <div class="header__title">
+               <div class="header__title" id="up">
                   <a href="#" class="header__title-link">
                      Фейлер Кристина Владимировна
                   </a>
@@ -27,17 +27,17 @@
                <div class="header__menu-text">
                   <ul class="menu__list">
                      <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="#about" class="menu__link">
                            <span class="menu__text">Обо мне</span>
                         </a>
                      </li>
                      <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="#work" class="menu__link">
                            <span class="menu__text">Профессиональный опыт</span>
                         </a>
                      </li>
                      <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="#contakt" class="menu__link">
                            <span class="menu__text">Контакты</span>
                         </a>
                      </li>
@@ -49,7 +49,7 @@
       <section class="about">
          <div class="container">
             <div class="about__desc">
-               <span class="about__icons">
+               <span class="about__icons" id="about">
                   Обо мне
                </span>
                <div class="about__text">
@@ -102,7 +102,7 @@
       </section>
       <section class="work">
          <div class="container">
-            <h1 class="title">
+            <h1 class="title" id="work">
                Опыт работы
             </h1>
             <div class="work__text">
@@ -210,7 +210,7 @@
       </section>
       <section class="feadback">
          <div class="container clearfix">
-            <h1 class="title feadback--icon">
+            <h1 class="title feadback--icon" id="contakt">
                Контакты
             </h1>
             <h2 class="title__subtitle">
@@ -293,12 +293,23 @@
             </div>
             <div class="footer__right">
                <div class="footer__text">
-                  <a href="#" class="footer__link"> Наверх</a>
+                  <a href="#up" class="footer__link"> Наверх</a>
                </div>
             </div>
          </div>
       </footer>
    </div>
+   <script src="js/lib/jquery-3.3.1.min.js"></script>
+   <script>
+   $(document).ready(function () {
+  $('a[href^="#"]').click(function() {
+    var target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 500);   
+  });
+});   
+   </script>
 </body>
 
 </html>
