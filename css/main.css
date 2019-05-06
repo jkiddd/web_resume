@@ -542,7 +542,7 @@ ul {
       
 }
 .about__list {
-   width: 340px;
+   width: 100%;
 }
 .about__list--media {
    width: 100%;
@@ -571,6 +571,8 @@ ul {
      .feadback--icon,.title__subtitle,.feadback__left-title {
         text-align: center;
      }
-
+.about__item {
+   margin-left: 0;
+} 
 }
 
