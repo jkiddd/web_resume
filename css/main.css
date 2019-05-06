@@ -544,6 +544,9 @@ ul {
 .about__list {
    width: 340px;
 }
+.about__list--media {
+   width: 100%;
+}
 .about__text {
    width: 100%;
 }
@@ -559,10 +562,15 @@ ul {
       display: block;
       width: 100%
      }
-     .work__block-right,.feadback__rigth,.feadback__left {
+     .work__block-right,.feadback__rigth,.feadback__left  {
       float: none;
       display: block;
       width: 100%
      } 
+
+     .feadback--icon,.title__subtitle,.feadback__left-title {
+        text-align: center;
+     }
+
 }
 
