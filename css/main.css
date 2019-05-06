@@ -338,7 +338,88 @@ font-weight: 600;
    content: "\f005"; 
    margin-right: 5px;
 }
+/* обратная связь */
+.feadback {
+   padding-top: 70px;
+   padding-bottom: 70px;
+   background-color: #a66266;
+}
 
+.feadback--icon {
+   color: #ffff;
+}
+.feadback--icon:before {
+   font-family: 'fontawesome';
+   content: "\f095";   
+}
+
+.title__subtitle {
+   font-size: 20px;
+font-weight: 400;
+color: #ffff;
+}
+.feadback__left {
+   float: left;
+   width: 50%;
+}
+.feadback__rigth {
+   float: right;
+   width: 40%;
+}
+.feadback--margin {
+   margin-left: 0px;
+}
+
+.feadback__left-title {
+   margin-top: 15px;
+   color: #ffff;
+   font-size: 22px;
+   font-weight: 700;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+.feadback__left-title:before {
+   font-family: 'fontawesome';
+   content: "\f098";   
+}
+.form__contacts {
+   margin-bottom: 10px;
+}
+.form__name {
+   font-size: 15px;
+   font-weight: 400;
+   color: #ffff;
+   margin-bottom: 3px;
+}
+.form__inpunt-tex {
+   width: 100%;
+   height: 36px;
+}
+.texteria {
+   width: 100%;
+   height: 100px;
+}
+.form__contacts-btn {
+   text-align: right;
+}
+/* стилизация социальных сетей */
+
+.social__item {
+   display: inline-block;
+   margin-right: 10px;
+}
+
+.btn {
+   margin-top: 10px;
+   padding: 9px 30px;
+   background-color: #5a708e;  
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+border: none;
+outline: none;
+cursor: pointer;
+}
 
 
 
@@ -370,4 +451,9 @@ padding-top: 20px;
    font-size: 12px;
    color: #ffff;
 
+}
+.footer__link:before {
+   font-family: 'fontawesome';
+   content: "\f062"; 
+   margin-right: 5px;
 }
